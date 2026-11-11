@@ -13,4 +13,4 @@
 3. Ejecutar todas las celdas y guardar el archivo.
 4. Registrar un commit: `git add 02_actividad && git commit -m "Actividad 2: graficos y funcion documentada" && git push`.
 
-El notebook usa `../01_actividad/datos/datos_ejemplo.csv` si se ejecuta desde `02_actividad/` y `01_actividad/datos/datos_ejemplo.csv` desde la raíz del repositorio. **Datos simulados exclusivamente para enseñanza.**
+El notebook usa `../01_actividad/datos/datos_ejemplo.csv` si se ejecuta desde `02_actividad/` y `01_actividad/datos/datos_ejemplo.csv` desde la raíz del repositorio. 

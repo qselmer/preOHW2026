@@ -17,6 +17,9 @@ Familiarizarse con Git/GitHub, JupyterHub/JupyterLab, Python para análisis de d
 preOHW2026/
 ├── README.md
 ├── requirements.txt
+├── .devcontainer/devcontainer.json
+├── scripts/setup_windows.ps1
+├── scripts/setup_unix.sh
 ├── .gitignore
 ├── 01_actividad/
 │   ├── README.md
@@ -45,7 +48,34 @@ cd preOHW2026
 
 Si ya tienes el repositorio en tu computadora, entra a su carpeta y usa `git pull origin main` en vez de clonarlo de nuevo. **Antes de hacer pull, guarda y comprueba tus cambios locales con `git status` para no generar conflictos con tus notebooks.**
 
-### 2. Crear un entorno virtual (una sola vez)
+### Opción A — GitHub Codespaces
+
+1. En el repositorio, selecciona **Code → Codespaces → Create codespace on main** (si tu cuenta tiene acceso).
+2. La configuración `.devcontainer/devcontainer.json` instala automáticamente las dependencias de `requirements.txt` cuando se crea el Codespace.
+3. Abre el notebook y selecciona el kernel **Python (preOHW2026)**.
+4. Ejecuta todas las celdas y guarda los outputs antes de hacer commit.
+
+**Nota:** Codespaces es un entorno remoto sujeto a cuotas y posibles cargos; visualizar un notebook desde la web de GitHub no lo ejecuta.
+
+### Opción B — Entorno local
+
+Desde la raíz del repositorio, en **Windows PowerShell**:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/setup_windows.ps1
+```
+
+En **macOS/Linux**:
+
+```bash
+bash scripts/setup_unix.sh
+```
+
+Los scripts crean `.venv`, instalan las dependencias, verifican la instalación y registran el kernel **Python (preOHW2026)**. La carpeta `.venv` se excluye de Git.
+
+### 2. Creación manual (alternativa)
+
+
 
 En **Windows PowerShell**:
 
@@ -69,7 +99,7 @@ python3.11 -m venv .venv
 
 Si Python 3.11 no está instalado, instálalo primero. La instalación requiere acceso a Internet la primera vez, salvo que ya dispongas de los paquetes.
 
-### 3. Iniciar JupyterLab con el entorno correcto
+### 3. Iniciar JupyterLab local con el entorno correcto
 
 En Windows:
 
@@ -124,4 +154,4 @@ Los entornos virtuales locales quedan fuera de Git mediante `.gitignore`. No se 
 
 ## Notas sobre los datos
 
-Los CSV incluidos son **simulados exclusivamente para práctica**. El proyecto final debe actualizarse con el conjunto proporcionado por la organización cuando esté disponible. El archivo de dependencias facilita ejecutar los notebooks, pero **no sustituye la prueba de ejecución local ni garantiza que cualquier equipo funcione sin ajustes**.
+Los CSV incluidos son **simulados exclusivamente para práctica**. El proyecto final debe actualizarse con el conjunto proporcionado por la organización cuando esté disponible. La celda inicial de cada notebook solo verifica dependencias y no instala en kernels protegidos por `uv`. El archivo de dependencias facilita ejecutar los notebooks, pero **no sustituye la prueba de ejecución local ni garantiza que cualquier equipo funcione sin ajustes**.

@@ -1,0 +1,6 @@
+# Entorno recomendado: Python 3.11
+# Rangos compatibles; no constituyen un lockfile de versiones exactas.
+pandas>=2.2,<2.4
+matplotlib>=3.9,<3.11
+jupyterlab>=4.2,<5
+ipykernel>=6.29,<7

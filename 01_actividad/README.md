@@ -1,11 +1,24 @@
-# Entrega 1 - Martes: exploración de datos
-**Objetivo:** demostrar que se puede leer un CSV, inspeccionar las primeras filas y describir su contenido.
+# Actividad 1 - Exploración de datos
+
+## Objetivo
+
+Cargar un archivo CSV, explorar sus registros y describir sus variables.
+
+## Entrega
+
+Martes.
 
 ## Requisitos
-- Abrir y ejecutar `notebook.ipynb` en JupyterLab/JupyterHub.
-- Importar `datos/datos_ejemplo.csv` (o identificar y documentar otro CSV).
+
+- Abrir `notebook.ipynb` en JupyterLab o JupyterHub.
+- Leer `datos/datos_ejemplo.csv` o documentar otro conjunto de datos.
 - Mostrar al menos las primeras cinco filas.
-- Explicar qué representa cada fila, cuáles son las variables y cuántas observaciones hay.
-- Guardar el notebook ejecutado y crear el primer commit.
+- Describir qué representa cada fila y cuáles son las variables.
+- Indicar el número de observaciones.
+- Ejecutar todas las celdas y guardar los resultados.
 
+## Entregable
 
+- `notebook.ipynb` ejecutado y guardado en GitHub.
+
+Consulta las instrucciones de instalación y publicación en el [README principal](../README.md).

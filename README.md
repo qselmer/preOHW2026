@@ -1,36 +1,35 @@
 # Semana Pre-Hackatón | OceanHackWeek 2026
 
 ## Objetivo
-Familiarizarse con Git/GitHub, JupyterHub/JupyterLab, Python o R, y análisis reproducible y colaborativo. La participación en el hackatón está condicionada a las entregas y evaluación de esta semana.
+Familiarizarse con Git/GitHub, JupyterHub/JupyterLab, Python para análisis de datos y trabajo reproducible.
 
-## Entregas
+## Actividades
 
-| Fecha límite | Carpeta | Actividad | Evidencia Git |
-|---|---|---|---|
-| Martes | `01_exploracion_datos/` | Leer CSV, inspeccionar filas, describir los datos | Primer commit |
-| Jueves | `02_graficos_funciones/` | Gráficos y una función sencilla | Segundo commit |
-| Viernes | `03_proyecto_final/` | Mini proyecto completo con conclusiones | Commit final |
+| Fecha de entrega | Carpeta | Requisitos |
+|---|---|---|
+| Martes | `01_actividad/` | Cargar CSV, inspeccionar filas y describir variables |
+| Jueves | `02_actividad/` | Crear gráficos y documentar una función |
+| Viernes | `03_proyecto_final/` | Mini proyecto con datos, exploración, visualización, función y conclusiones |
 
-
-## Organización
+## Estructura
 ```text
-pre-hackaton-oceanhackweek-2026/
+preOHW2026/
 ├── README.md
-├── 01_exploracion_datos/
+├── 01_actividad/
 │   ├── README.md
 │   ├── datos/datos_ejemplo.csv
 │   └── notebook.ipynb
-├── 02_graficos_funciones/
+├── 02_actividad/
 │   ├── README.md
 │   └── notebook.ipynb
-├── 03_proyecto/
-│   ├── README.md
-│   ├── datos/README.md
-│   ├── figuras/.gitkeep
-│   └── notebook.ipynb
-└── revision_tutores/
+└── 03_proyecto_final/
     ├── README.md
-    └── rubrica_revision.csv
+    ├── datos/datos_ejemplo.csv
+    ├── figuras/.gitkeep
+    └── notebook.ipynb
 ```
 
+## Ejecutar
+Abrir los notebooks con JupyterLab/JupyterHub. La actividad 1 usa módulos estándar de Python; las actividades 2 y final requieren `pandas` y `matplotlib`.
 
+**Importante:** los datos CSV incluidos son **simulados exclusivamente para práctica**. El proyecto final debe actualizarse con el conjunto proporcionado por la organización cuando esté disponible. Los commits ya realizados registran la preparación del material, pero los notebooks deben ejecutarse y guardarse con sus resultados para la entrega.

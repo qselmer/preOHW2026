@@ -1,10 +1,26 @@
-# Actividad 2 - R/Python para análisis de datos (jueves)
+# Actividad 2 - Visualización y funciones
 
-**Objetivos:** crear gráficos, definir y documentar una función propia, y practicar Git/GitHub.
+## Objetivo
 
-## Entregables
-- `notebook.ipynb` ejecutado con **dos gráficos**.
-- Función `promedio_valido()` con documentación, ejemplo y comprobación.
-- Commit en GitHub.
+Crear gráficos, definir una función documentada y practicar el trabajo con Git y GitHub.
 
-El notebook usa `../01_actividad/datos/datos_ejemplo.csv` si se ejecuta desde `02_actividad/` y `01_actividad/datos/datos_ejemplo.csv` desde la raíz del repositorio. 
+## Entrega
+
+Jueves.
+
+## Requisitos
+
+- Abrir `notebook.ipynb` en JupyterLab o JupyterHub.
+- Cargar el conjunto de datos de la actividad 1.
+- Crear dos gráficos e interpretar brevemente los resultados.
+- Definir y documentar la función `promedio_valido()`.
+- Incluir un ejemplo de uso y comprobar el resultado.
+- Ejecutar todas las celdas y guardar los resultados.
+
+## Entregable
+
+- `notebook.ipynb` ejecutado y guardado en GitHub.
+
+El CSV está en `../01_actividad/datos/datos_ejemplo.csv` si trabajas desde esta carpeta. Desde la raíz del repositorio, utiliza `01_actividad/datos/datos_ejemplo.csv`.
+
+Consulta las instrucciones de instalación y publicación en el [README principal](../README.md).

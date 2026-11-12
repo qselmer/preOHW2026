@@ -69,22 +69,3 @@ En macOS o Linux:
 
 Selecciona el kernel `Python (preOHW2026)`. Ejecuta todas las celdas, comprueba que no haya errores y guarda el notebook con sus resultados.
 
-## Entrega en GitHub
-
-Desde la raíz del repositorio, añade el archivo que modificaste. Por ejemplo:
-
-```bash
-git add 01_actividad/notebook.ipynb
-git commit -m "Completar actividad 1"
-git push origin main
-```
-
-Usa la rama de trabajo que corresponda a tu flujo de colaboración. Si trabajas mediante pull request, publica tu rama y abre el pull request en GitHub en lugar de enviar directamente a `main`.
-
-## Notas
-
-- Los datos CSV incluidos son simulados y se utilizan solo para practicar.
-- No subas la carpeta `.venv/` al repositorio.
-- Las versiones de `requirements.txt` son rangos compatibles, no un entorno fijado exactamente.
-- Si falta un módulo, comprueba que Jupyter use el kernel del entorno instalado.
-- La ejecución de los notebooks debe verificarse antes de entregar.
